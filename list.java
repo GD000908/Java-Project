@@ -1,7 +1,8 @@
+//SLiinkedList를 사용하기 위해 get(),insert(),remove(),search(),show() 구현
+
 package pro1;
 import java.util.Scanner;
 import java.util.LinkedList;
-//20191093 박건도
 //ET = Element Type
 
 //LinearList 인터페이스
