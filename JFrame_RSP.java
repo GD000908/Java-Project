@@ -10,7 +10,7 @@ class MyFrame extends JFrame implements ActionListener {
 	MyFrame() {
 
 		setSize(560, 450); // 창 크기 조절
-		setTitle("박건도 20191093");// 창 이름
+		setTitle("가위바위보 게임");// 창 이름
 		setLocation(700, 300);// 창 위치 조정
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
