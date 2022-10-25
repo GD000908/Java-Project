@@ -121,7 +121,7 @@ class SLinkedList <ET> implements LinearList<ET>{
 
 
 //Main문
-public class test11 {
+public class main {
 	public static void main(String[] args) {
 		SLinkedList<Integer> list = new SLinkedList<Integer>();
 		//list 생성후 값 삽입. 
