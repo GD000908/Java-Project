@@ -114,7 +114,7 @@ class MyFrame extends JFrame implements ActionListener {
 	}
 }
 
-public class Homework1 {
+public class main {
 	public static void main(String[] args) {
 		MyFrame frame = new MyFrame();
 	}
