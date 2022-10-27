@@ -5,8 +5,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-class MyFrame extends JFrame implements ActionListener { // implements ActionListener를 사용하면 밑에 있는 ActionListener를 정의할
-															// 필요가 없다.
+class MyFrame extends JFrame implements ActionListener { // implements ActionListener를 사용하면 밑에 있는 ActionListener를 정의할 필요가 없다
+	
 	//extends는 부모의 메소드를 그대로 사용할 수 있으며 오버라이딩 할 필요 없이 부모에 구현되있는 것을 직접 사용 가능하다.
 	// extends와implement는 둘다 상속이지만 차이점은 implement는 밑에 오버리이딩(재정의)를 해주어야 한다.
 	
@@ -35,7 +35,7 @@ class MyFrame extends JFrame implements ActionListener { // implements ActionLis
 
 		{
 
-			@Override
+			@Override // buttonListener라는 객체에 대한 오버라이드 
 
 			public void actionPerformed(ActionEvent e) {
 
@@ -82,7 +82,7 @@ class MyFrame extends JFrame implements ActionListener { // implements ActionLis
 		setVisible(true); // 프레임 화면에 등장
 
 	}
-	@Override
+	@Override //class MyFrame에 대한 오버라이드. implements 상속은 ActionListener를 사용하기 위해서 오버라이드를 해주어야 한다. 
 	public void actionPerformed(ActionEvent e) { 
 
 	}
