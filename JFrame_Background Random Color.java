@@ -83,6 +83,7 @@ class MyFrame extends JFrame implements ActionListener { // implements ActionLis
 
 	}
 	@Override //class MyFrame에 대한 오버라이드. implements 상속은 ActionListener를 사용하기 위해서 오버라이드를 해주어야 한다. 
+		 //내장 함수 오버라이드를 해줘야 오류가 나지 않는다.
 	public void actionPerformed(ActionEvent e) { 
 
 	}
