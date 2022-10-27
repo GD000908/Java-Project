@@ -76,7 +76,7 @@ class MyFrame extends JFrame implements ActionListener { // implements ActionLis
 
 	}
 
-	@Override
+	@Override  //MyFrame 유형은 상속된 추상 메소드 이므로  ActionListener.actionPerformed(ActionEvent)를 구현해야 
 
 	public void actionPerformed(ActionEvent e) { 
 
