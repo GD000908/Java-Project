@@ -45,10 +45,6 @@ class MyFrame extends JFrame implements ActionListener { // implements ActionLis
 
 			public void actionPerformed(ActionEvent e) {
 
-				// 라벨 문장변경
-
-				// count ==, --, =0
-
 				String s = e.getActionCommand(); // 버튼에 있는 글자 의미.
 
 				System.out.println(s);
@@ -62,7 +58,7 @@ class MyFrame extends JFrame implements ActionListener { // implements ActionLis
 				else if (e.getSource() == b3)
 					count = 0;
 
-				l.setText("현재의 카운트 값: [" + count + "]");
+				l.setText("현재의 카운트 값: [" + count + "]");  //라벨 l의 "현재의 카운트 값: [0] "문구에서 count값만큼 []안의 숫자를 바꿔줌
 
 			}
 
