@@ -12,27 +12,27 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.*;
 
 class MyFrame extends JFrame implements ActionListener {
-
+	
+	//공의 x,y좌표 
 	int x = 0;
-
 	int y = 0;
+	
+	//바의 y값 초기값. 
 	int stick_y=90;
+	
 	int x_increment = 3;
-
 	int y_increment = 3;
 
 	class MyPanel extends JPanel {
 		
 		
-		
+		//공 
 		@Override
-
 		public void paintComponent(Graphics g) {
 
 			super.paintComponents(g);
 
 			g.setColor(Color.RED);
-
 			g.fillOval(x, y, 40, 40);
 
 			x += x_increment;
@@ -47,8 +47,10 @@ class MyFrame extends JFrame implements ActionListener {
 			if (x >= 530) //오른쪽 벽
 				x_increment = -3;
 
-			if (x <= 25 && y <=stick_y) //왼쪽 벽
-				x_increment = 3;
+			 if (x <= 25 && (y <=(stick_y+60) & (y>=stick_y-60)) ) //왼쪽 벽
+		           x_increment = 3;
+			  
+
 			
 		}
 
@@ -58,7 +60,7 @@ class MyFrame extends JFrame implements ActionListener {
 
 		setSize(600, 420);
 		setLocation(600, 400);
-		setTitle("20191093 박건도");
+		setTitle("1p PingPong Game");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
@@ -76,7 +78,7 @@ class MyFrame extends JFrame implements ActionListener {
 				switch(code)
 				{
 				case KeyEvent.VK_UP : 
-					stick_y-=4;
+					stick_y-=4; 
 					break;
 				case KeyEvent.VK_DOWN  :
 					stick_y+=4;
