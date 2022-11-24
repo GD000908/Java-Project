@@ -49,6 +49,16 @@ class MyFrame extends JFrame implements ActionListener {
 
 			 if (x <= 25 && (y <=(stick_y+60) & (y>=stick_y-60)) ) //왼쪽 벽
 		           x_increment = 3;
+			
+			if (x <= 0 && (y<= 0 || y <= 420)) { //왼쪽 벽에 부딪혔을때 
+		           x_increment = 0;
+		           y_increment = 0;
+			 }
+			 if (x_increment == 0 && y_increment ==0 ) {  //부딪혔을때 게임종료 
+				 System.out.println("Game Over");
+				 System.exit(-1); //프로그램 
+			 }
+
 			  
 
 			
