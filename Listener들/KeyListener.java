@@ -18,7 +18,7 @@ class MyFrame extends JFrame implements KeyListener {
 
 		setSize(530, 280); // 창 크기 조절
 
-		setTitle("박건도 20191093");// 창 이름
+		setTitle("KeyListener");// 창 이름
 
 		setLocation(700, 300);// 창 위치 조정
 
@@ -112,7 +112,7 @@ class MyFrame extends JFrame implements KeyListener {
 
 }
 
-public class Mine {
+public class Main {
 
 	public static void main(String[] args) {
 
