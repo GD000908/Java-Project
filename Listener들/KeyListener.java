@@ -29,7 +29,7 @@ class MyFrame extends JFrame implements KeyListener {
 		/*
 			e.getKeyChar() : 눌린 키의 문자를 리턴
 			e.getKeyCode() : 눌린 키의 아스키코드를 리턴
-			e.getModifiers() : Shift, Ctrl, Alt키 인식 각각 1,2,8 리턴
+			e.getModifiers() : 예시) Shift, Ctrl, Alt키 인식 각각 1,2,8 리턴
 		 */
 		
 		//KeyListener = 키보드를 눌렀을 때 호출되는 메소드를 가지고 있는 인터페이스
