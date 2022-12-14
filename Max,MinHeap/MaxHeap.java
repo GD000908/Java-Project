@@ -94,7 +94,7 @@ public class Main {
     public static void main(String[] args) {
     	//70  80  40  30  50  60  20  10
     	
-    	MinHeap<Integer> MH = new MinHeap();
+    	MaxHeap<Integer> MH = new MaxHeap();
     	MH.insert(70);
     	MH.insert(80);
     	MH.insert(40);
