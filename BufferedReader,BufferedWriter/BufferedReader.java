@@ -24,11 +24,11 @@ public class Main {
 												 // //BufferedReader 입력받는 방법.
 		
 		StringTokenizer st;
-		for(int i=0; i<=T; i++)
+		for(int i=1; i<=T; i++)
 		{			
 			st = new StringTokenizer(bf.readLine()," ");
-			bw.write((Integer.parseInt(st.nextToken()) + // nextToken()함수를 쓰면 readLine()을 통해 입력받은 값을 공백단위로 구분하여 순서대로 호출할 수 있다. 
-					Integer.parseInt(st.nextToken()))+ "\n");
+			// nextToken()함수를 쓰면 readLine()을 통해 입력받은 값을 공백단위로 구분하여 순서대로 호출할 수 있다. 
+			bw.write((Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()))+ "\n");
 			//System.out.println(a+b);  --> 짧은시간내에 출력해야하는경우 print문도 느리다.
 	
 		}
