@@ -8,8 +8,8 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-class MyFrame extends JFrame implements ActionListener { // implements ActionListener를 사용하면 밑에 있는 ActionListener를 정의할
-															// 필요가 없다.
+class MyFrame extends JFrame implements ActionListener { // implements ActionListener를 사용하면 밑에 있는 ActionListener를 정의할 필요가 없다.
+															
 
 	int count = 0;
 
